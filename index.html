@@ -3,13 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Diseño web profesional para autónomos y pymes desde 149€. Webs que venden. Responsive, SEO y rápidas. Entrega en 7 días. ✓ Garantía 100%">
-    <title>Diseño Web Profesional desde 149€ - Webs que Venden | disenatuweb.es</title>
+    <title>Diseño Web Profesional desde 149€ | disenatuweb.es</title>
+    <meta name="description" content="Diseño web profesional para autónomos y pymes desde 149€. Tu página web lista en 7 días, responsive y optimizada para Google. ¡Pide presupuesto gratis!">
+    <meta name="keywords" content="diseño web, diseño web barato, página web profesional, diseño web España, web para autónomos, web para pymes, crear página web">
+    <meta name="author" content="disenatuweb.es">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.disenatuweb.es/">
+    <meta property="og:title" content="Diseño Web Profesional desde 149€ | disenatuweb.es">
+    <meta property="og:description" content="Tu página web lista en 7 días desde 149€. Diseño profesional, responsive y optimizado para Google.">
+    <meta property="og:url" content="https://www.disenatuweb.es">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Diseño Web Profesional desde 149€ | disenatuweb.es">
+    <meta name="twitter:description" content="Tu página web lista en 7 días desde 149€. Pide tu presupuesto gratis.">
+    <meta name="geo.region" content="ES">
+    <meta name="geo.placename" content="España">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "disenatuweb.es",
+      "description": "Diseño web profesional para autónomos y pymes en España",
+      "url": "https://www.disenatuweb.es",
+      "telephone": "+34605114588",
+      "priceRange": "149€ - 499€",
+      "areaServed": "ES",
+      "offers": [
+        {"@type":"Offer","name":"Plan Básico","price":"149","priceCurrency":"EUR"},
+        {"@type":"Offer","name":"Plan Profesional","price":"299","priceCurrency":"EUR"},
+        {"@type":"Offer","name":"Plan Tienda Online","price":"499","priceCurrency":"EUR"}
+      ]
+    }
+    </script>
+
     <style>
         * {
             margin: 0;
@@ -23,25 +55,29 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background: #FFFFFF;
+            background: #ffffff;
             color: #1a1a1a;
             line-height: 1.6;
         }
 
         .container {
-            max-width: 1400px;
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 0 40px;
+            padding: 0 20px;
         }
 
         /* Header */
         header {
             background: #fff;
-            border-bottom: 1px solid #f0f0f0;
             padding: 20px 0;
             position: sticky;
             top: 0;
             z-index: 100;
+            transition: box-shadow 0.3s ease;
+        }
+
+        header.scrolled {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         .header-content {
@@ -52,352 +88,261 @@
 
         .logo {
             font-size: 24px;
-            font-weight: 800;
+            font-weight: 700;
             color: #1a1a1a;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .logo span {
-            color: #00D99F;
         }
 
         nav {
-            display: flex;
-            gap: 40px;
-            align-items: center;
-        }
-
-        nav a {
-            color: #666;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-            font-size: 14px;
-        }
-
-        nav a:hover {
-            color: #00D99F;
-        }
-
-        .cta-btn {
-            background: #00D99F;
-            color: #000;
-            padding: 12px 28px;
-            border-radius: 8px;
-            border: none;
-            font-weight: 600;
-            cursor: pointer;
-            font-size: 14px;
-            transition: all 0.3s;
-        }
-
-        .cta-btn:hover {
-            background: #00c285;
-            transform: translateY(-2px);
+            display: none;
         }
 
         /* Hero Section */
         .hero {
-            padding: 80px 0 100px;
-            background: #fff;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
+            padding: 50px 20px;
+            background: #ffffff;
+            min-height: auto;
         }
 
         .hero-content {
-            max-width: 800px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            align-items: center;
         }
 
         .hero h1 {
-            font-size: 72px;
-            font-weight: 800;
-            line-height: 1.1;
-            margin-bottom: 30px;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 20px;
             color: #1a1a1a;
-            font-family: 'Poppins', sans-serif;
         }
 
-        .hero h1 .highlight {
-            color: #00D99F;
+        .hero h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #7c3aed;
+            margin-bottom: 15px;
         }
 
         .hero p {
-            font-size: 20px;
-            color: #666;
-            margin-bottom: 40px;
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 30px;
             line-height: 1.6;
         }
 
         .hero-buttons {
             display: flex;
-            gap: 20px;
-            margin-bottom: 60px;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
         }
 
-        .btn-large {
-            padding: 16px 40px;
+        .btn {
+            padding: 14px 32px;
             border: none;
-            border-radius: 8px;
+            border-radius: 6px;
             font-size: 16px;
             font-weight: 600;
             cursor: pointer;
-            transition: all 0.3s;
+            transition: all 0.3s ease;
             text-decoration: none;
             display: inline-block;
             font-family: 'Inter', sans-serif;
         }
 
-        .btn-green {
-            background: #00D99F;
-            color: #000;
+        .btn-primary {
+            background: #7c3aed;
+            color: white;
         }
 
-        .btn-green:hover {
-            background: #00c285;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0, 217, 159, 0.2);
+        .btn-primary:hover {
+            background: #6d28d9;
+            transform: translateY(-2px);
         }
 
-        .btn-white {
-            background: transparent;
-            color: #00D99F;
-            border: 2px solid #00D99F;
-        }
-
-        .btn-white:hover {
-            background: #00D99F;
-            color: #000;
-        }
-
-        .hero-trust {
+        .hero-urgency {
             font-size: 14px;
+            color: #dc2626;
+            font-style: italic;
+        }
+
+        .hero-image {
+            width: 100%;
+            aspect-ratio: 4/3;
+            background: #e5e7eb;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: #999;
-        }
-
-        .hero-trust strong {
-            color: #00D99F;
-        }
-
-        /* Stats */
-        .stats {
-            background: #f9f9f9;
-            padding: 60px 0;
-            border-top: 1px solid #f0f0f0;
-            border-bottom: 1px solid #f0f0f0;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 40px;
-        }
-
-        .stat {
-            text-align: center;
-        }
-
-        .stat-number {
-            font-size: 48px;
-            font-weight: 800;
-            color: #00D99F;
-            margin-bottom: 10px;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .stat-label {
-            font-size: 15px;
-            color: #666;
-            font-weight: 500;
-        }
-
-        /* Problems Section */
-        .problems {
-            padding: 100px 0;
-            background: #fff;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 80px;
-        }
-
-        .section-header h2 {
-            font-size: 56px;
-            font-weight: 800;
-            margin-bottom: 20px;
-            color: #1a1a1a;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .section-header p {
             font-size: 18px;
-            color: #666;
-            max-width: 600px;
-            margin: 0 auto;
         }
 
-        .problems-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
+        /* Section Problema */
+        .problema {
+            padding: 50px 20px;
+            background: #ffffff;
         }
 
-        .problem-card {
-            padding: 40px;
-            background: #f9f9f9;
-            border-radius: 12px;
-            border: 1px solid #f0f0f0;
-            transition: all 0.3s;
-        }
-
-        .problem-card:hover {
-            border-color: #00D99F;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
-            transform: translateY(-5px);
-        }
-
-        .problem-icon {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-
-        .problem-card h3 {
-            font-size: 20px;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #1a1a1a;
-            line-height: 1.3;
-        }
-
-        .problem-card p {
-            font-size: 15px;
-            color: #666;
-            line-height: 1.7;
-        }
-
-        /* Solutions Section */
-        .solutions {
-            padding: 100px 0;
-            background: #f9f9f9;
-        }
-
-        .solutions-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-        }
-
-        .solution-card {
-            background: #fff;
-            padding: 40px;
-            border-radius: 12px;
-            border: 1px solid #f0f0f0;
+        .section-title {
             text-align: center;
-            transition: all 0.3s;
+            margin-bottom: 50px;
         }
 
-        .solution-card:hover {
-            border-color: #00D99F;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
-            transform: translateY(-5px);
-        }
-
-        .solution-icon {
-            font-size: 52px;
-            margin-bottom: 20px;
-        }
-
-        .solution-card h3 {
-            font-size: 18px;
+        .section-title h2 {
+            font-size: 36px;
             font-weight: 700;
             margin-bottom: 15px;
             color: #1a1a1a;
         }
 
-        .solution-card p {
-            font-size: 14px;
-            color: #666;
-            line-height: 1.7;
-        }
-
-        /* Pricing */
-        .pricing {
-            padding: 100px 0;
-            background: #fff;
-        }
-
-        .pricing-grid {
+        .problema-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 1fr;
             gap: 30px;
-            margin-bottom: 60px;
+            margin-bottom: 40px;
+        }
+
+        .problema-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 12px;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .problema-icon {
+            font-size: 36px;
+            min-width: 50px;
+        }
+
+        .problema-card h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .problema-card p {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .problema-cierre {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a1a1a;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+        }
+
+        /* Precios Section */
+        .precios {
+            padding: 50px 20px;
+            background: #f8f9fa;
+        }
+
+        .badge-limited {
+            text-align: center;
+            background: #dc2626;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            display: inline-block;
+            margin: 0 auto 30px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .precios-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
         }
 
         .price-card {
-            background: #f9f9f9;
-            border: 2px solid #f0f0f0;
+            background: white;
+            padding: 40px;
             border-radius: 12px;
-            padding: 50px 40px;
-            transition: all 0.3s;
+            border: 2px solid #e5e7eb;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
             position: relative;
         }
 
         .price-card:hover {
-            border-color: #00D99F;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
             transform: translateY(-10px);
+            box-shadow: 0 4px 30px rgba(124,58,237,0.2);
+            border-color: #7c3aed;
         }
 
         .price-card.featured {
-            border-color: #00D99F;
-            background: linear-gradient(135deg, rgba(0, 217, 159, 0.05) 0%, #fff 100%);
-            transform: scale(1.05);
+            border-color: #7c3aed;
+            box-shadow: 0 4px 30px rgba(124,58,237,0.2);
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.05) 0%, white 100%);
         }
 
         .price-badge {
             position: absolute;
-            top: -15px;
+            top: -12px;
             left: 20px;
-            background: #00D99F;
-            color: #000;
+            background: #7c3aed;
+            color: white;
             padding: 6px 16px;
             border-radius: 20px;
             font-size: 12px;
             font-weight: 700;
-            text-transform: uppercase;
         }
 
         .price-card h3 {
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 700;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             color: #1a1a1a;
         }
 
-        .price-amount {
-            font-size: 56px;
-            font-weight: 800;
-            color: #00D99F;
-            margin-bottom: 5px;
-            font-family: 'Poppins', sans-serif;
+        .price-subtitle {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 20px;
         }
 
-        .price-period {
+        .price-old {
             font-size: 14px;
             color: #999;
-            margin-bottom: 30px;
+            text-decoration: line-through;
+            margin-bottom: 5px;
+        }
+
+        .price-amount {
+            font-size: 44px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 5px;
+        }
+
+        .price-payment {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 25px;
         }
 
         .price-features {
             list-style: none;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         .price-features li {
-            padding: 12px 0;
+            padding: 10px 0;
             font-size: 14px;
-            color: #666;
+            color: #555;
             border-bottom: 1px solid #f0f0f0;
             display: flex;
             align-items: center;
@@ -407,8 +352,8 @@
             content: '✓';
             width: 20px;
             height: 20px;
-            background: #00D99F;
-            color: #fff;
+            background: #7c3aed;
+            color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -419,633 +364,902 @@
             flex-shrink: 0;
         }
 
-        .price-card .btn-large {
+        .price-card .btn {
             width: 100%;
             text-align: center;
         }
 
-        /* Process */
-        .process {
-            padding: 100px 0;
-            background: #f9f9f9;
+        .precios-cta {
+            text-align: center;
+            margin-top: 40px;
         }
 
-        .process-grid {
+        .precios-cta .btn {
+            padding: 16px 48px;
+            font-size: 18px;
+        }
+
+        /* Cómo trabajamos */
+        .proceso {
+            padding: 50px 20px;
+            background: #ffffff;
+        }
+
+        .proceso-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: 1fr;
             gap: 30px;
-            position: relative;
         }
 
-        .process-grid::before {
-            content: '';
-            position: absolute;
-            top: 50px;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: linear-gradient(90deg, #00D99F, transparent);
-            z-index: 0;
-        }
-
-        .process-step {
-            background: #fff;
-            padding: 40px 30px;
+        .proceso-step {
+            background: #f8f9fa;
+            padding: 30px;
             border-radius: 12px;
             text-align: center;
-            border: 1px solid #f0f0f0;
-            position: relative;
-            z-index: 1;
         }
 
         .step-number {
             width: 50px;
             height: 50px;
-            background: #00D99F;
-            color: #fff;
+            background: #7c3aed;
+            color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 24px;
-            font-weight: 800;
-            margin: 0 auto 20px;
-            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            margin: 0 auto 15px;
         }
 
-        .process-step h3 {
+        .proceso-step h3 {
             font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 15px;
+            font-weight: 600;
+            margin-bottom: 10px;
             color: #1a1a1a;
         }
 
-        .process-step p {
+        .proceso-step p {
             font-size: 14px;
-            color: #666;
+            color: #555;
         }
 
-        /* Testimonials */
-        .testimonials {
-            padding: 100px 0;
-            background: #fff;
+        /* Portfolio */
+        .portfolio {
+            padding: 50px 20px;
+            background: #f8f9fa;
         }
 
-        .testimonials-grid {
+        .portfolio-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
+            grid-template-columns: 1fr;
+            gap: 30px;
         }
 
-        .testimonial-card {
-            background: #f9f9f9;
-            padding: 40px;
+        .portfolio-item {
+            background: white;
             border-radius: 12px;
-            border: 1px solid #f0f0f0;
+            overflow: hidden;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
         }
 
-        .stars {
-            color: #FFD700;
-            font-size: 16px;
-            margin-bottom: 15px;
-        }
-
-        .testimonial-text {
-            font-size: 15px;
-            color: #666;
-            margin-bottom: 20px;
-            font-style: italic;
-            line-height: 1.8;
-        }
-
-        .testimonial-author {
+        .portfolio-image {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: #e5e7eb;
             display: flex;
             align-items: center;
-            gap: 15px;
+            justify-content: center;
+            color: #999;
         }
 
-        .author-avatar {
+        .portfolio-title {
+            padding: 20px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        /* Opiniones */
+        .opiniones {
+            padding: 50px 20px;
+            background: #ffffff;
+        }
+
+        .opiniones-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        .opinion-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 4px solid #7c3aed;
+        }
+
+        .opinion-header {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+
+        .opinion-avatar {
             width: 50px;
             height: 50px;
-            background: #00D99F;
+            background: #7c3aed;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #fff;
-            font-weight: 700;
-            font-size: 18px;
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
         }
 
-        .author-info h4 {
+        .opinion-author h4 {
             font-size: 14px;
-            font-weight: 700;
+            font-weight: 600;
             color: #1a1a1a;
             margin-bottom: 3px;
         }
 
-        .author-info p {
+        .opinion-author p {
+            font-size: 12px;
+            color: #555;
+        }
+
+        .stars {
+            color: #fbbf24;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .opinion-text {
+            font-size: 15px;
+            color: #555;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .opinion-verified {
             font-size: 12px;
             color: #999;
+            margin-top: 10px;
         }
 
-        /* CTA Section */
-        .cta-section {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
-            color: #fff;
-            text-align: center;
+        /* FAQ */
+        .faq {
+            padding: 50px 20px;
+            background: #f8f9fa;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
             border-radius: 12px;
-            margin: 0 -40px;
-            padding-left: 40px;
-            padding-right: 40px;
+            overflow: hidden;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
         }
 
-        .cta-section h2 {
-            font-size: 48px;
-            font-weight: 800;
+        .faq-question {
+            background: white;
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #1a1a1a;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: #f8f9fa;
+        }
+
+        .faq-toggle {
+            font-size: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background: #f8f9fa;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        .faq-answer-content {
+            padding: 20px;
+            font-size: 15px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Formulario */
+        .contacto {
+            padding: 50px 20px;
+            background: #ffffff;
+        }
+
+        .contacto-wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
             margin-bottom: 20px;
-            font-family: 'Poppins', sans-serif;
         }
 
-        .cta-section p {
-            font-size: 18px;
-            color: #ccc;
-            margin-bottom: 40px;
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+            font-size: 14px;
         }
 
-        .cta-section .btn-large {
-            background: #00D99F;
-            color: #000;
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #7c3aed;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 14px;
+            background: #7c3aed;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            font-size: 16px;
+        }
+
+        .form-submit:hover {
+            background: #6d28d9;
+        }
+
+        .form-success {
+            display: none;
+            background: #d1fae5;
+            color: #065f46;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 20px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .contacto-alternativa {
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 1px solid #e5e7eb;
+            text-align: center;
+        }
+
+        .contacto-alternativa p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .contacto-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contacto-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #1a1a1a;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .contacto-link:hover {
+            background: #7c3aed;
+            color: white;
         }
 
         /* Footer */
         footer {
             background: #1a1a1a;
             color: #999;
-            padding: 60px 0 20px;
-            border-top: 1px solid #333;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 50px;
-            margin-bottom: 40px;
-        }
-
-        .footer-section h4 {
-            color: #fff;
-            font-size: 14px;
-            font-weight: 700;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
-
-        .footer-section ul {
-            list-style: none;
-        }
-
-        .footer-section ul li {
-            margin-bottom: 12px;
-        }
-
-        .footer-section ul li a {
-            color: #999;
-            text-decoration: none;
-            font-size: 13px;
-            transition: color 0.3s;
-        }
-
-        .footer-section ul li a:hover {
-            color: #00D99F;
-        }
-
-        .footer-bottom {
+            padding: 40px 20px;
             text-align: center;
-            font-size: 13px;
-            color: #666;
-            border-top: 1px solid #333;
-            padding-top: 20px;
+            font-size: 14px;
+        }
+
+        /* WhatsApp Flotante */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 9999;
+            animation: pulse 2s infinite;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-btn svg {
+            width: 30px;
+            height: 30px;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+            }
+            50% {
+                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.6);
+            }
         }
 
         /* Responsive */
-        @media (max-width: 1024px) {
+        @media (min-width: 768px) {
             .container {
-                padding: 0 30px;
+                padding: 0 40px;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr 1fr;
             }
 
             .hero h1 {
                 font-size: 48px;
             }
 
-            .problems-grid,
-            .solutions-grid,
-            .pricing-grid,
-            .testimonials-grid {
-                grid-template-columns: repeat(2, 1fr);
+            .problema-grid {
+                grid-template-columns: repeat(1, 1fr);
             }
 
-            .process-grid {
-                grid-template-columns: repeat(2, 1fr);
+            .precios-grid {
+                grid-template-columns: repeat(3, 1fr);
             }
 
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
+            .proceso-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .portfolio-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .opiniones-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .section-title h2 {
+                font-size: 42px;
+            }
+
+            .hero h2 {
+                font-size: 28px;
             }
         }
 
-        @media (max-width: 768px) {
+        @media (min-width: 1024px) {
             .container {
-                padding: 0 20px;
-            }
-
-            header {
-                padding: 15px 0;
-            }
-
-            .header-content {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            nav {
-                display: none;
+                padding: 0 60px;
             }
 
             .hero {
-                padding: 60px 0 80px;
+                padding: 80px 20px 100px;
             }
 
             .hero h1 {
-                font-size: 36px;
+                font-size: 56px;
             }
 
-            .hero p {
-                font-size: 16px;
+            .precios {
+                padding: 80px 20px;
             }
 
-            .hero-buttons {
-                flex-direction: column;
-            }
-
-            .btn-large {
-                width: 100%;
-                text-align: center;
-            }
-
-            .section-header h2 {
-                font-size: 36px;
-            }
-
-            .problems-grid,
-            .solutions-grid,
-            .pricing-grid,
-            .process-grid,
-            .testimonials-grid,
-            .stats-grid,
-            .footer-content {
-                grid-template-columns: 1fr;
-            }
-
-            .price-card.featured {
-                transform: scale(1);
-            }
-
-            .cta-section {
-                margin: 0 -20px;
-                padding-left: 20px;
-                padding-right: 20px;
-                border-radius: 0;
+            .section-title h2 {
+                font-size: 48px;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
+    <header id="header">
         <div class="container">
             <div class="header-content">
-                <div class="logo">diseña<span>tu</span>web</div>
-                <nav>
-                    <a href="#servicios">Servicios</a>
-                    <a href="#precios">Precios</a>
-                    <a href="#proceso">Proceso</a>
-                    <a href="#contacto">Contacto</a>
-                </nav>
-                <button class="cta-btn">Solicitar Demo</button>
+                <div class="logo">disenatuweb.es</div>
             </div>
         </div>
     </header>
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Webs que <span class="highlight">venden.</span> No webs que cuelgan.</h1>
-                <p>Diseño web profesional para autónomos y pymes. Rápido, barato y que funciona. Entrega garantizada en 7 días.</p>
-                
-                <div class="hero-buttons">
-                    <button class="btn-large btn-green">Ver nuestros trabajos</button>
-                    <button class="btn-large btn-white">Solicitar presupuesto</button>
-                </div>
-
-                <p class="hero-trust"><strong>⭐ 50+ webs entregadas</strong> • Garantía 100% satisfacción • Empresas de toda España</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats -->
-    <section class="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat">
-                    <div class="stat-number">50+</div>
-                    <div class="stat-label">Webs entregadas</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">7 días</div>
-                    <div class="stat-label">Tiempo de entrega</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">Clientes satisfechos</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">149€</div>
-                    <div class="stat-label">Precio inicial</div>
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div>
+                        <h1>Diseño y creación de página web</h1>
+                        <h2>Tu web profesional lista en solo 7 días desde 149€</h2>
+                        <p>Diseñamos y desarrollamos páginas web modernas, rápidas y optimizadas para generar resultados reales para tu negocio.</p>
+                        <div class="hero-buttons">
+                            <a href="#contacto" class="btn btn-primary">Quiero mi web</a>
+                        </div>
+                        <p class="hero-urgency">Oferta disponible hasta el <span id="fecha-oferta"></span></p>
+                    </div>
+                    <div class="hero-image">Tu web aquí</div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Problems -->
-    <section class="problems" id="servicios">
-        <div class="container">
-            <div class="section-header">
-                <h2>¿Cuál es tu problema?</h2>
-                <p>Seguro que te identificas con alguno. Los solucionamos juntos.</p>
-            </div>
-
-            <div class="problems-grid">
-                <div class="problem-card">
-                    <div class="problem-icon">🤔</div>
-                    <h3>Tu negocio va bien pero nadie te encuentra</h3>
-                    <p>Pierdes clientes potenciales porque no tienes presencia online profesional.</p>
+        <!-- PROBLEMA -->
+        <section class="problema">
+            <div class="container">
+                <div class="section-title">
+                    <h2>¿Te suena familiar?</h2>
                 </div>
-                <div class="problem-card">
-                    <div class="problem-icon">🐢</div>
-                    <h3>Tu web está anticuada o no inspira confianza</h3>
-                    <p>Los clientes se van a la competencia que sí tiene una web moderna y profesional.</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">💸</div>
-                    <h3>Te han presupuestado miles de euros</h3>
-                    <p>No tiene sentido gastar una fortuna cuando estás empezando o necesitas renovar.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Solutions -->
-    <section class="solutions">
-        <div class="container">
-            <div class="section-header">
-                <h2>Lo que consigues con nosotros</h2>
-                <p>Todo lo que necesitas para triunfar online. Sin sorpresas.</p>
-            </div>
-
-            <div class="solutions-grid">
-                <div class="solution-card">
-                    <div class="solution-icon">✨</div>
-                    <h3>Diseño que diferencia</h3>
-                    <p>Moderno, limpio y profesional. Una web que transmite confianza.</p>
-                </div>
-                <div class="solution-card">
-                    <div class="solution-icon">📱</div>
-                    <h3>100% Mobile First</h3>
-                    <p>Se ve perfecta en cualquier dispositivo. El 85% navega desde móvil.</p>
-                </div>
-                <div class="solution-card">
-                    <div class="solution-icon">⚡</div>
-                    <h3>Ultra rápida</h3>
-                    <p>Optimizada al máximo. Google premia las webs rápidas.</p>
-                </div>
-                <div class="solution-card">
-                    <div class="solution-icon">🔍</div>
-                    <h3>SEO incluido</h3>
-                    <p>Optimizada para buscadores. Traeremos clientes orgánicos.</p>
-                </div>
-                <div class="solution-card">
-                    <div class="solution-icon">📞</div>
-                    <h3>Fácil de contactar</h3>
-                    <p>Botones de WhatsApp, teléfono, email integrados.</p>
-                </div>
-                <div class="solution-card">
-                    <div class="solution-icon">🛠️</div>
-                    <h3>Panel fácil de usar</h3>
-                    <p>Cambias textos y fotos sin saber de código.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing -->
-    <section class="pricing" id="precios">
-        <div class="container">
-            <div class="section-header">
-                <h2>Precios transparentes</h2>
-                <p>Elige el plan que necesitas. Sin sorpresas ocultas.</p>
-            </div>
-
-            <div class="pricing-grid">
-                <div class="price-card">
-                    <h3>Plan Básico</h3>
-                    <div class="price-amount">149€</div>
-                    <p class="price-period">Único pago</p>
-                    <ul class="price-features">
-                        <li>Landing page (1 página)</li>
-                        <li>Diseño profesional</li>
-                        <li>100% responsive</li>
-                        <li>Formulario contacto</li>
-                        <li>SEO básico</li>
-                        <li>Entrega 3-4 días</li>
-                    </ul>
-                    <button class="btn-large btn-green">Contratar</button>
-                </div>
-
-                <div class="price-card featured">
-                    <div class="price-badge">⭐ Más popular</div>
-                    <h3>Plan Profesional</h3>
-                    <div class="price-amount">299€</div>
-                    <p class="price-period">Único pago</p>
-                    <ul class="price-features">
-                        <li>Web completa (5 páginas)</li>
-                        <li>Diseño profesional</li>
-                        <li>100% responsive</li>
-                        <li>Formulario avanzado</li>
-                        <li>Blog incluido</li>
-                        <li>Google Analytics</li>
-                        <li>SEO optimizado</li>
-                        <li>Entrega 7 días</li>
-                    </ul>
-                    <button class="btn-large btn-green">Contratar</button>
-                </div>
-
-                <div class="price-card">
-                    <h3>Tienda Online</h3>
-                    <div class="price-amount">499€</div>
-                    <p class="price-period">Único pago</p>
-                    <ul class="price-features">
-                        <li>Tienda WooCommerce</li>
-                        <li>Hasta 20 productos</li>
-                        <li>Pasarela de pago</li>
-                        <li>100% responsive</li>
-                        <li>Panel admin</li>
-                        <li>Email marketing</li>
-                        <li>Envíos integrados</li>
-                        <li>Entrega 10-12 días</li>
-                    </ul>
-                    <button class="btn-large btn-green">Contratar</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Process -->
-    <section class="process" id="proceso">
-        <div class="container">
-            <div class="section-header">
-                <h2>Así es el proceso</h2>
-                <p>Rápido, transparente y sin sorpresas.</p>
-            </div>
-
-            <div class="process-grid">
-                <div class="process-step">
-                    <div class="step-number">1</div>
-                    <h3>Briefing</h3>
-                    <p>Te contactamos para entender tu negocio y necesidades.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">2</div>
-                    <h3>Propuesta</h3>
-                    <p>Te presentamos el presupuesto personalizado en 24h.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">3</div>
-                    <h3>Diseño</h3>
-                    <p>Desarrollamos tu web. Cambios ilimitados hasta aprobar.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">4</div>
-                    <h3>Publicar</h3>
-                    <p>Tu web online, configurada y lista para vender.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>Lo que dicen nuestros clientes</h2>
-                <p>Historias reales de negocios que crecieron con nosotros.</p>
-            </div>
-
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"En 5 días tenía mi web lista. Al mes siguiente ya me llegaban clientes nuevos. Increíble servicio."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">MG</div>
-                        <div class="author-info">
-                            <h4>María García</h4>
-                            <p>Peluquería Granada</p>
+                <div class="problema-grid">
+                    <div class="problema-card">
+                        <div class="problema-icon">🤔</div>
+                        <div>
+                            <h3>Tienes un negocio que funciona pero en internet no te encuentra nadie</h3>
+                            <p>Pierdes clientes potenciales porque no tienes presencia online profesional.</p>
+                        </div>
+                    </div>
+                    <div class="problema-card">
+                        <div class="problema-icon">🐢</div>
+                        <div>
+                            <h3>Tu web actual da vergüenza o directamente no tienes</h3>
+                            <p>Los clientes se van a la competencia que sí tiene una web moderna y profesional.</p>
+                        </div>
+                    </div>
+                    <div class="problema-card">
+                        <div class="problema-icon">💸</div>
+                        <div>
+                            <h3>Has pedido presupuestos y te piden entre 1.000€ y 5.000€</h3>
+                            <p>No tiene sentido gastar una fortuna cuando estás empezando o necesitas renovar.</p>
                         </div>
                     </div>
                 </div>
+                <div class="problema-cierre">
+                    Hay una forma más sencilla y más barata. Y funciona.
+                </div>
+            </div>
+        </section>
 
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Pensé que 149€ era muy barato para una web profesional. Pero vaya, está impecable. Recomiendo al 100%."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">CM</div>
-                        <div class="author-info">
-                            <h4>Carlos Martín</h4>
-                            <p>Fontanería Sevilla</p>
-                        </div>
+        <!-- PRECIOS -->
+        <section class="precios" id="precios">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Esto es lo que consigues con nuestros precios</h2>
+                </div>
+                <div style="text-align: center;">
+                    <div class="badge-limited">¡TIEMPO LIMITADO!</div>
+                </div>
+                <div class="precios-grid">
+                    <!-- Plan Básico -->
+                    <div class="price-card">
+                        <h3>Diseño Web Rápido</h3>
+                        <p class="price-subtitle">Dos páginas (inicio y contacto)</p>
+                        <p class="price-old">Precio normal: 299€</p>
+                        <p class="price-amount">149€</p>
+                        <p class="price-payment">Pago único</p>
+                        <ul class="price-features">
+                            <li>Diseño y estructura</li>
+                            <li>Diseño responsive (móvil)</li>
+                            <li>Optimización SEO</li>
+                            <li>Enlace directo a WhatsApp, teléfono y email</li>
+                            <li>Entrega en 3-4 días</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-primary">Quiero este plan</a>
+                    </div>
+
+                    <!-- Plan Profesional -->
+                    <div class="price-card featured">
+                        <div class="price-badge">Popular</div>
+                        <h3>Diseño Web Profesional</h3>
+                        <p class="price-subtitle">Web corporativa completa</p>
+                        <p class="price-old">Precio normal: 599€</p>
+                        <p class="price-amount">299€</p>
+                        <p class="price-payment">50% al inicio, 50% al entregar</p>
+                        <ul class="price-features">
+                            <li>Diseño y estructura</li>
+                            <li>Diseño responsive (móvil)</li>
+                            <li>Optimización SEO</li>
+                            <li>Enlace directo a WhatsApp, teléfono y email</li>
+                            <li>Optimización SEO Avanzada</li>
+                            <li>Páginas de servicios</li>
+                            <li>Entrega en 7 días</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-primary">Quiero este plan</a>
+                    </div>
+
+                    <!-- Plan E-commerce -->
+                    <div class="price-card">
+                        <h3>Diseño Web E-commerce</h3>
+                        <p class="price-subtitle">Web Tienda Online completa</p>
+                        <p class="price-old">Precio normal: 899€</p>
+                        <p class="price-amount">499€</p>
+                        <p class="price-payment">50% al inicio, 50% al entregar</p>
+                        <ul class="price-features">
+                            <li>Diseño y estructura</li>
+                            <li>Diseño responsive (móvil)</li>
+                            <li>Optimización SEO</li>
+                            <li>Enlace directo a WhatsApp, teléfono y email</li>
+                            <li>Optimización SEO Avanzada</li>
+                            <li>Páginas de servicios y venta</li>
+                            <li>Carrito y pasarela de pago</li>
+                            <li>Entrega en 12 días</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-primary">Quiero este plan</a>
                     </div>
                 </div>
+                <div class="precios-cta">
+                    <a href="#contacto" class="btn btn-primary">Quiero mi web</a>
+                </div>
+            </div>
+        </section>
 
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Me atendieron como su único cliente. Explicaban cada paso. Sin límite de cambios. Profesional y cercano."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">LP</div>
-                        <div class="author-info">
-                            <h4>Laura Pérez</h4>
-                            <p>Academia Inglés Madrid</p>
+        <!-- CÓMO TRABAJAMOS -->
+        <section class="proceso">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Cómo trabajamos</h2>
+                    <p style="font-size: 16px; color: #555;">Un proceso claro y transparente de principio a fin.</p>
+                </div>
+                <div class="proceso-grid">
+                    <div class="proceso-step">
+                        <div class="step-number">1</div>
+                        <h3>Nos escribes</h3>
+                        <p>Nos mandas un WhatsApp o rellenas el formulario. Sin compromiso.</p>
+                    </div>
+                    <div class="proceso-step">
+                        <div class="step-number">2</div>
+                        <h3>Escuchamos</h3>
+                        <p>Estudiamos tu negocio, competencia y objetivos.</p>
+                    </div>
+                    <div class="proceso-step">
+                        <div class="step-number">3</div>
+                        <h3>Diseñamos</h3>
+                        <p>Desarrollamos tu web con las mejores tecnologías.</p>
+                    </div>
+                    <div class="proceso-step">
+                        <div class="step-number">4</div>
+                        <h3>Lanzamiento en 7 días</h3>
+                        <p>Publicamos, optimizamos y te enseñamos a gestionar tu web.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section class="portfolio">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Webs que hemos creado</h2>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">Peluquería</div>
+                        <div class="portfolio-title">Peluquería Granada</div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">Fontanero</div>
+                        <div class="portfolio-title">Fontanería Sevilla</div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">Restaurante</div>
+                        <div class="portfolio-title">Restaurante Málaga</div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">Clínica</div>
+                        <div class="portfolio-title">Clínica Dental Valencia</div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">Academia</div>
+                        <div class="portfolio-title">Academia de Inglés Madrid</div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">Tienda Online</div>
+                        <div class="portfolio-title">Tienda Online Ropa</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OPINIONES -->
+        <section class="opiniones">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Lo que dicen nuestros clientes</h2>
+                </div>
+                <div class="opiniones-grid">
+                    <div class="opinion-card">
+                        <div class="opinion-header">
+                            <div class="opinion-avatar">MG</div>
+                            <div class="opinion-author">
+                                <h4>María G.</h4>
+                                <p>Peluquería Granada</p>
+                            </div>
+                        </div>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="opinion-text">"Muy recomendable. En menos de una semana tenía mi web lista y ya me llegan clientes nuevos por internet. Trato cercano y profesional."</p>
+                        <p class="opinion-verified">✓ Verificado en Google</p>
+                    </div>
+                    <div class="opinion-card">
+                        <div class="opinion-header">
+                            <div class="opinion-avatar">CM</div>
+                            <div class="opinion-author">
+                                <h4>Carlos M.</h4>
+                                <p>Fontanero Sevilla</p>
+                            </div>
+                        </div>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="opinion-text">"Pensaba que sería caro pero por el precio que me cobraron no se puede pedir más. La web quedó genial y me la explicaron toda."</p>
+                        <p class="opinion-verified">✓ Verificado en Google</p>
+                    </div>
+                    <div class="opinion-card">
+                        <div class="opinion-header">
+                            <div class="opinion-avatar">LP</div>
+                            <div class="opinion-author">
+                                <h4>Laura P.</h4>
+                                <p>Academia de Inglés</p>
+                            </div>
+                        </div>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="opinion-text">"Rápidos, profesionales y muy atentos. Desde que tengo la web me llegan consultas todas las semanas. 100% recomendable."</p>
+                        <p class="opinion-verified">✓ Verificado en Google</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Preguntas frecuentes</h2>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            ¿Puedo pagar en dos veces?
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Sí. El 50% al empezar y el otro 50% cuando entregamos la web. Sin complicaciones. Puedes pagar por Bizum o PayPal.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            ¿Qué necesito tener preparado?
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                El logo si tienes, textos de tu negocio y fotos si las hay. Si no tienes nada, no te preocupes. Te guiamos en todo lo que falte.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            ¿Y si no me gusta cómo queda?
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Hacemos todos los cambios que necesites hasta que estés contento. No entregamos nada que no te guste. Garantía total.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            ¿Incluye dominio y hosting?
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                El diseño está incluido en el precio. El dominio (.es o .com) y el hosting son unos 50-80€/año adicionales que te ayudamos a contratar paso a paso.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CTA -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>¿Listo para tu web?</h2>
-            <p>Comencemos hoy. Tu diseño profesional está a solo un click.</p>
-            <button class="btn-large" style="background: #00D99F; color: #000; margin-top: 20px;">Solicitar presupuesto ahora</button>
-        </div>
-    </section>
+        <!-- CONTACTO -->
+        <section class="contacto" id="contacto">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Pide tu web ahora</h2>
+                    <p style="font-size: 16px; color: #555;">Rellena el formulario y te contestamos en menos de 2 horas.</p>
+                </div>
+                <div class="contacto-wrapper">
+                    <form id="formulario">
+                        <div class="form-group">
+                            <label for="nombre">Nombre *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono *</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="plan">Plan de interés *</label>
+                            <select id="plan" name="plan" required>
+                                <option value="">Selecciona un plan</option>
+                                <option value="basico">Diseño Web Rápido (149€)</option>
+                                <option value="profesional">Web Profesional (299€)</option>
+                                <option value="ecommerce">Tienda Online (499€)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Más información (opcional)</label>
+                            <textarea id="mensaje" name="mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">Enviar</button>
+                        <div class="form-success" id="form-success">
+                            ¡Mensaje enviado! Te contactamos en menos de 2 horas.
+                        </div>
+                    </form>
 
-    <!-- Footer -->
+                    <div class="contacto-alternativa">
+                        <p>O si lo prefieres, contacta directamente:</p>
+                        <div class="contacto-links">
+                            <a href="tel:+34605114588" class="contacto-link">
+                                📞 605 11 45 88
+                            </a>
+                            <a href="https://wa.me/34605114588?text=Hola,%20me%20interesa%20vuestra%20oferta%20de%20diseño%20web" class="contacto-link">
+                                💬 WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Producto</h4>
-                    <ul>
-                        <li><a href="#">Características</a></li>
-                        <li><a href="#">Precios</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Empresa</h4>
-                    <ul>
-                        <li><a href="#">Sobre nosotros</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="#">Política privacidad</a></li>
-                        <li><a href="#">Términos de uso</a></li>
-                        <li><a href="#">Cookies</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contacto</h4>
-                    <ul>
-                        <li><a href="tel:+34605114588">+34 605 114 588</a></li>
-                        <li><a href="mailto:hola@disenatuweb.es">hola@disenatuweb.es</a></li>
-                        <li><a href="#">💬 WhatsApp</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 disenatuweb.es - Diseño web profesional para pymes y autónomos</p>
-            </div>
+            <p>Copyright © 2025 disenatuweb.es - Todos los derechos reservados</p>
         </div>
     </footer>
+
+    <!-- WhatsApp Flotante -->
+    <a href="https://wa.me/34605114588?text=Hola,%20quiero%20información%20sobre%20diseño%20web" class="whatsapp-btn" title="¡Escríbenos ahora!">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="color: white;">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-9.746 9.798c0 2.734.732 5.404 2.126 7.662L.957 23.08l8.189-2.148c2.203 1.227 4.671 1.875 7.208 1.875 5.412 0 9.846-4.434 9.846-9.846 0-2.629-.962-5.095-2.717-7.044-1.754-1.948-4.223-3.021-6.77-3.021z"/>
+        </svg>
+    </a>
+
+    <script>
+        // Fecha dinámica de oferta (hoy + 15 días)
+        function actualizarFechaOferta() {
+            const hoy = new Date();
+            const fechaOferta = new Date(hoy.getTime() + 15 * 24 * 60 * 60 * 1000);
+            const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+            const dia = fechaOferta.getDate();
+            const mes = meses[fechaOferta.getMonth()];
+            document.getElementById('fecha-oferta').textContent = `el ${dia} de ${mes}`;
+        }
+
+        // Header sticky con sombra
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // FAQ - Acordeones
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', function() {
+                // Cerrar todos los demás
+                faqItems.forEach(otroItem => {
+                    if (otroItem !== item) {
+                        otroItem.classList.remove('active');
+                    }
+                });
+                // Toggle el actual
+                item.classList.toggle('active');
+            });
+        });
+
+        // Formulario
+        const formulario = document.getElementById('formulario');
+        formulario.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nombre = document.getElementById('nombre').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const telefono = document.getElementById('telefono').value.trim();
+            
+            if (!nombre || !email || !telefono) {
+                alert('Por favor rellena todos los campos obligatorios');
+                return;
+            }
+            
+            // Mostrar mensaje de éxito
+            document.getElementById('form-success').style.display = 'block';
+            formulario.reset();
+            
+            // Ocultar después de 5 segundos
+            setTimeout(function() {
+                document.getElementById('form-success').style.display = 'none';
+            }, 5000);
+        });
+
+        // Inicializar
+        actualizarFechaOferta();
+    </script>
 
 </body>
 </html>
